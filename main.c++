@@ -12,6 +12,7 @@ int main(){
     cout<<"3 == divisao \n";
     cout<<"4 == Multiplicacao \n";
     cout<<"5 == potencia \n";
+    cout<<"6 == raiz quadrada \n";
 
     int operacao;
 
@@ -78,5 +79,14 @@ int main(){
        cout<<"^ ";
        cin >>num2;
        cout<<"= "<< pow(num1, num2);
+    }
+
+       if (operacao == 6)
+    {
+        int num1;
+
+       cout<<"Digite a sua raiz:";
+       cin >> num1;
+       cout<<"= "<< sqrt(num1);
     }
 }
