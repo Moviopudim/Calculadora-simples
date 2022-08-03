@@ -1,5 +1,6 @@
 #include<iostream>
 #include <windows.h>
+#include <math.h>
 using namespace std;
 
 int main(){
@@ -10,6 +11,7 @@ int main(){
     cout<<"2 == Subtracao \n";
     cout<<"3 == divisao \n";
     cout<<"4 == Multiplicacao \n";
+    cout<<"5 == potencia \n";
 
     int operacao;
 
@@ -64,5 +66,17 @@ int main(){
        cout<<"* ";
        cin >>num2;
        cout<<"= "<<num1 * num2;
+    }
+
+     if (operacao == 5)
+    {
+        int num1;
+        int num2;
+
+       cout<<"Digite a sua conta:";
+       cin >> num1;
+       cout<<"^ ";
+       cin >>num2;
+       cout<<"= "<< pow(num1, num2);
     }
 }
