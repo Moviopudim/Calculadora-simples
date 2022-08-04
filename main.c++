@@ -14,6 +14,8 @@ int main(){
     cout<<"5 == potencia \n";
     cout<<"6 == raiz quadrada \n";
     cout<<"7 == porcentagem \n";
+    cout<<"8 == Forca \n";
+   
     int operacao;
 
     cout<<"Qual a sua operacao: ";
@@ -101,5 +103,20 @@ int main(){
        float result = (percentage/100)*num;
        cout<<"A porcentagem de "<< num <<" e "<< result <<"%" ;
        
+    }
+
+ if (operacao == 8)
+    {
+      int a;
+      int m;
+
+      cout<<"Digite a massa: ";
+      cin >> m;
+      cout<<"Digite a aceleracao em metros por segundo quadrado (m/s): ";
+      cin >>a;
+
+      int force = m * a;
+
+      cout<<"A forca do objeto e: "<< force <<"n.";
     }
 }
