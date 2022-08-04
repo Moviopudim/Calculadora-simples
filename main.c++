@@ -13,7 +13,7 @@ int main(){
     cout<<"4 == Multiplicacao \n";
     cout<<"5 == potencia \n";
     cout<<"6 == raiz quadrada \n";
-
+    cout<<"7 == porcentagem \n";
     int operacao;
 
     cout<<"Qual a sua operacao: ";
@@ -81,12 +81,25 @@ int main(){
        cout<<"= "<< pow(num1, num2);
     }
 
-       if (operacao == 6)
+    if (operacao == 6)
     {
         int num1;
 
        cout<<"Digite a sua raiz:";
        cin >> num1;
-       cout<<"= "<< sqrt(num1);
+       cout<<"A raiz de "<<num1 <<"e: "<< sqrt(num1);
+    }
+
+     if (operacao == 7)
+    {
+        float percentage, num;
+
+       cout<<"Digite a porcentagem:";
+       cin >> percentage;
+       cout<<"A qual numero ela representa: ";
+       cin >> num;
+       float result = (percentage/100)*num;
+       cout<<"A porcentagem de "<< num <<" e "<< result <<"%" ;
+       
     }
 }
